@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="keyboard_icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Keystroke Heat Map</title>
+</head>
+<body>
+    <!-- Instructions -->
+    <h1 id="start-typing">Start typing to see a heat map of they keys that you are clicking!</h1>
+    
+    <!-- Button to prompt a paragraph to write -->
+    <div id="new-prompt-div">
+        <h2 id="type-anything">Type anything you want, or click here to generate a paragraph that gives you something to follow.</h2>
+        <button id="new-paragraph-button"><b>Give me a paragraph</b></button>
+        <div id="text-div">
+            <p id="prompt"></p>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Container for the entire keyboard -->
+    <div id="wrapper">
+        <div id="keyboard">
+            <!-- Container for the number row -->
+            <div class="row" id="num-row"></div>
+            <!-- Container for the top letter row -->
+            <div class="row" id="top-row"></div>
+            <!-- Container for the middle letter row -->
+            <div class="row" id="mid-row"></div>
+            <!-- Container for the bottom letter row -->
+            <div class="row" id="bot-row"></div>
+        </div>
+    </div>
+
+    <!-- Display heatmap scale next to keyboard -->
+    <div id="heatmap-scale">
+    </div>
+
+
+</body>
+<!-- Link in JS script to control paragraph generation and heat map updates -->
+<script src="script.js"></script>
+</html>
